@@ -2,8 +2,6 @@
 
 *Diretório de **andamento** de cursos.*
 
----
-
 ## Cursos em andamento
 
 - [ ] (Curso em vídeo)
