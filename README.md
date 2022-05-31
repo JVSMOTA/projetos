@@ -4,7 +4,7 @@
 
 ## Cursos em andamento
 
-- [ ] Curso em vídeo
+- [ ] Curso em vídeo (Python 3 - Mundo 1)
 - [ ] Curso Haskell para Iniciantes
 - [ ] Curso JS
 - [ ] Introdução à Programação com Python
