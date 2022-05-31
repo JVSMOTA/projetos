@@ -1,0 +1,9 @@
+Você quer aprender a programar?
+    Sim, quero muito.
+Como está seu nível de paciência?
+    Está adequado para começar os estudos.
+Quanto tempo você pretende estudar?
+    O tempo suficiente para terminar este livro o mais rapidamente. Hoje, dia 28/04/2022, é o dia inicial.
+Qual é o seu objetivo ao programar?
+    Aprender a resolver problemas e ajudar pessoas mais facilmente. Quero, um dia, poder ajudar ativamente em criação de próteses, que simulem e usem da inteligência artificial na sua produção.
+    
