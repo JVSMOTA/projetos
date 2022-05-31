@@ -4,10 +4,10 @@
 
 ## Cursos em andamento
 
-- [ ] (Curso em vídeo)
-- [ ] (Curso Haskell para Iniciantes)
-- [ ] (Curso JS)
-- [ ] (Introdução à Programação com Python)
+- [ ] Curso em vídeo
+- [ ] Curso Haskell para Iniciantes
+- [ ] Curso JS
+- [ ] Introdução à Programação com Python
 
 ## Cursos concluídos
 
