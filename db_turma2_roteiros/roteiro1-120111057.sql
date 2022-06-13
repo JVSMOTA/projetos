@@ -51,8 +51,3 @@ CREATE TABLE reparo (
     placa_veiculo CHAR(7)
 );
 
-
-
-
-
-
