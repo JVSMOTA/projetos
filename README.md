@@ -8,6 +8,7 @@
 - [ ] Curso Haskell para Iniciantes
 - [ ] Curso JS
 - [ ] Introdução à Programação com Python
+- [ ] Capacitação Mobile (CodeX)
 
 ## Cursos concluídos
 
