@@ -19,3 +19,4 @@ escolhido = random.randrange(0, len(lista_alunos) - 1)
 print(f"3° {lista_alunos[escolhido]}")
 lista_alunos.pop(escolhido)
 print(f"4° {lista_alunos[0]}")
+

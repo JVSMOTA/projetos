@@ -9,6 +9,7 @@
 - [ ] Curso JS
 - [ ] Introdução à Programação com Python
 - [ ] Capacitação Mobile (CodeX)
+- [ ] Estudo sobre SpaceVim
 
 ## Cursos concluídos
 
