@@ -1,4 +1,4 @@
-kWh_consumida = float(input("Digite a quantidade de kWh consumida: "))
+    kWh_consumida = float(input("Digite a quantidade de kWh consumida: "))
 instalacao = input("Escolha o tipo de Instalação:" +
                  "\nR - Residências" +
                  "\nI - Indústrias" +

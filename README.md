@@ -7,7 +7,7 @@
 - [ ] Curso em vídeo (Python 3 - Mundo 1)
 - [ ] Curso Haskell para Iniciantes
 - [ ] Curso JS
-- [ ] Introdução à Programação com Python
+- [ ] Introdução à Programação com Python (5/12)
 - [ ] Capacitação Mobile (CodeX)
 - [ ] Estudo sobre SpaceVim
 
