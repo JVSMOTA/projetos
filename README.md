@@ -9,11 +9,10 @@
 - [ ] Curso JS
 - [ ] Introdução à Programação com Python (5/12)
 - [ ] Capacitação Mobile (CodeX)
-- [x] Estudo sobre SpaceVim
 
 ## Cursos concluídos
 
-*Nada aqui ainda...*
+- [x] Estudo sobre SpaceVim
 
 ## Comandos Git
 
