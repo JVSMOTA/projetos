@@ -13,7 +13,7 @@ while questao <= 3:
         pontos += 1
     if questao == 2 and (resposta == "a" or resposta == "A"):
         pontos += 1
-    if questao == 3 and (resposta == "d" or resposta == "D"):
+    if questao == 3 and (resposta == "d" or resposta == "D" ):
         pontos += 1
     questao += 1
 

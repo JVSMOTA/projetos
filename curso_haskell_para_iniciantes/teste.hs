@@ -1,2 +1,6 @@
-soma 1 = 1
-soma n = soma(n - 1) + n
+nomes :: (String, String, String)
+nomes = ("Marcos", "Geeksbr", "Haskell")
+
+selec_prim (x, _, _) = x
+selec_sec (_, y, _) = y
+selec_terc (_, _, z) = z
