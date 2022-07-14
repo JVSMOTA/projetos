@@ -18,7 +18,7 @@
 
 | Comandos | Descrição |
 | -------- | --------- |
-| `git clone https:` | Clonar repositório |
+| `git clone "https:"` | Clonar repositório |
 | `git init` | Inicializa um novo repositório |
 | `git add .` | Adiciona os arquivos atuais ao próximo commit |
 | `git status` | Verificar o status atual do repositório git |
