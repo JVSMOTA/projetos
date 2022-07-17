@@ -1,3 +1,27 @@
+consultarAtracoesPorData :: IO ()
+consultarAtracoesPorData = do
+  putStrLn "\nDigite a data inicial no formato DD MM AAAA: (separado por espaço)"
+  putStr "> "
+  hFlush stdout
+  ini <- getLine
+  putStrLn "\nDigite a data final no formato DD MM AAAA: (separado por espaço)"
+  putStr "> "
+  hFlush stdout
+  fim <- getLine
+
+  let i = split ini ' '
+  let f = split fim ' '
+
+  let dataInicial = toDate i
+  let dataFinal = toDate f
+
+  let saida = queryAtracoesPorData atracoes dataInicial dataFinal
+
+  putStrLn saida
+
+  menuPrincipalPrompt
+
+-- Funcões com Data ###############################################
 type Data = (Int, Int, Int)
 type AtracoesByDate = (String, Data)
 
@@ -35,15 +59,18 @@ getAno (_, _, a) = a
 
 checkValidDate :: Data -> Bool
 checkValidDate n | getDia n > 31 = False
-                 | getDia n < 1 = False
-                 | getMes n > 12 = False
-                 | getMes n < 1 = False
-                 | getAno n < 1 = False
-                 | otherwise = True
+                | getDia n < 1 = False
+                | getMes n > 12 = False
+                | getMes n < 1 = False
+                | getAno n < 1 = False
+                | otherwise = True
+
+toDate :: [String] -> Data
+toDate s = (read (head s), read (head (tail s)), read (last s))
 
 checkValidInterval :: Data -> Data -> Bool
 checkValidInterval x y | menorOuIgual x y = True
-                       | otherwise = False
+                      | otherwise = False
 
 maiorOuIgual :: Data -> Data -> Bool
 maiorOuIgual x y = (getDia x + (getMes x * 30) + (getAno x * 12 * 30)) >= (getDia y + (getMes y * 30) + (getAno y * 12 * 30)) 
@@ -52,12 +79,22 @@ menorOuIgual :: Data -> Data -> Bool
 menorOuIgual x y = (getDia x + (getMes x * 30) + (getAno x * 12 * 30)) <= (getDia y + (getMes y * 30) + (getAno y * 12 * 30)) 
 
 atracoesToString :: AtracoesByDate -> String
-atracoesToString x = show (getDia (getData x)) ++ "/" ++ show (getMes (getData x)) ++ "/" ++ show (getAno (getData x)) ++ " - "++ getAtracoes x ++ "\n"
+atracoesToString x = "\n" ++ show (getDia (getData x)) ++ "/" ++ show (getMes (getData x)) ++ "/" ++ show (getAno (getData x)) ++ " - "++ getAtracoes x 
 
 consultaDatas :: AtracoesByDate -> Data -> Data -> String
 consultaDatas x ini fim | maiorOuIgual (getData x) ini && menorOuIgual (getData x) fim  = atracoesToString x
-                        | otherwise = ""
+                      | otherwise = ""
 
-consultarAtracoesPorData :: [AtracoesByDate] -> Data -> Data -> String
-consultarAtracoesPorData [] _ _ = ""
-consultarAtracoesPorData (x:xs) ini fim = consultarAtracoesPorData xs ini fim ++ consultaDatas x ini fim
+queryAtracoesPorData :: [AtracoesByDate] -> Data -> Data -> String
+queryAtracoesPorData [] _ _ = ""
+queryAtracoesPorData (x:xs) ini fim = queryAtracoesPorData xs ini fim ++ consultaDatas x ini fim
+
+split :: String -> Char -> [String]
+split [] delim = [""]
+split (c:cs) delim
+    | c == delim = "" : rest
+    | otherwise = (c : head rest) : tail rest
+    where
+        rest = split cs delim
+
+-- Funções com Data ###############################################
