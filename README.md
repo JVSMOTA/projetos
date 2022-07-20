@@ -5,14 +5,9 @@
 ## Cursos em andamento
 
 - [ ] Curso em vídeo (Python 3 - Mundo 1)
-- [ ] Curso Haskell para Iniciantes
 - [ ] Curso JS
 - [ ] Introdução à Programação com Python (5/12)
 - [ ] Capacitação Mobile (CodeX)
-
-## Cursos concluídos
-
-- [x] Estudo sobre SpaceVim
 
 ## Comandos Git
 
@@ -29,4 +24,3 @@
 | `git checkout -b "nome da branch de origem" "nome da nova branch"` | Permite mudar e criar uma nova branch com base em outra |
 | `git merge "branch a receber merge"` | Permite fazer o merge da branch ativa atualmete com outra branch |
 | `git pull` | Atualiza a branch atualmente ativa |
-
